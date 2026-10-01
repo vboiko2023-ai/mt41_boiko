@@ -1,6 +1,6 @@
-/* Стилі для бокової панелі (aside) */
+
 .sidebar {
-    width: 350px; /* Ширина бокової панелі, можете змінити під свій макет */
+    width: 350px; 
     padding: 15px;
     font-family: Arial, sans-serif;
 }
@@ -12,23 +12,21 @@
     color: #000;
 }
 
-/* Скидання стилів для списку */
 .video-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Кожен елемент списку (для фону, як на зразку) */
 .video-list li {
     margin-bottom: 10px;
 }
-/* Чередування сірого фону для деяких елементів списку, як на фото */
+
 .video-list li:nth-child(odd) {
-    background-color: #f0f4e8; /* Легкий зеленуватий/сірий відтінок */
+    background-color: #f0f4e8; 
 }
 
-/* Стилі для посилання (щоб картинка і текст були в один рядок) */
+
 .video-link {
     display: flex;
     align-items: flex-start;
@@ -38,15 +36,15 @@
 }
 
 .video-link:hover {
-    background-color: #e5e5e5; /* Ефект при наведенні */
+    background-color: #e5e5e5;
 }
 
-/* Контейнер для картинки (щоб час позиціювався відносно нього) */
+
 .video-thumbnail {
     position: relative;
     width: 120px;
     height: 68px;
-    flex-shrink: 0; /* Щоб картинка не стискалась */
+    flex-shrink: 0; 
     margin-right: 15px;
     border-radius: 4px;
     overflow: hidden;
@@ -58,7 +56,6 @@
     object-fit: cover;
 }
 
-/* Плашка з часом відео */
 .video-time {
     position: absolute;
     bottom: 4px;
@@ -71,7 +68,6 @@
     font-weight: bold;
 }
 
-/* Стилі для заголовка відео */
 .video-title {
     font-size: 13px;
     margin: 0;

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student card FORM</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student card FORM</h1>
+
+    <form id="studentForm" action="#" method="post">
+        
+        <section>
+            <h2>Personal Information</h2>
+            <fieldset>
+                <legend>Provide your details</legend>
+                
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter a password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="16" max="100">
+                </div>
+                
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="Other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Languages Known:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="english" name="languages" value="English">
+                        <label for="english">English</label><br>
+                        <input type="checkbox" id="spanish" name="languages" value="Spanish">
+                        <label for="spanish">Spanish</label><br>
+                        <input type="checkbox" id="french" name="languages" value="French">
+                        <label for="french">French</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="">Select your country</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                    </select>
+                </div>
+            </fieldset>
+        </section>
+
+        <section>
+            <h2>College Subjects</h2>
+            <fieldset>
+                <legend>Select your subjects</legend>
+                
+                <div class="form-group">
+                    <label for="subjects">Choose subjects:</label>
+                    <select id="subjects" name="subjects" multiple size="5">
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="English">English</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="interest">Rate your interest in Computer Science:</label>
+                    <input type="range" id="interest" name="interest" min="1" max="10">
+                </div>
+            </fieldset>
+        </section>
+
+        <section>
+            <h2>Skills Assessment</h2>
+            <fieldset>
+                <legend>Assess your skills</legend>
+                
+                <div class="form-group">
+                    <label for="skills">Describe your skills:</label><br>
+                    <textarea id="skills" name="skills" rows="4" cols="50" placeholder="List your skills here..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resume">Upload your resume:</label>
+                    <input type="file" id="resume" name="resume">
+                </div>
+                
+                <div class="form-group">
+                    <label for="color">Pick your favorite color:</label>
+                    <input type="color" id="color" name="color">
+                </div>
+                
+                <div class="form-group">
+                    <label for="studyTime">Preferred study time:</label>
+                    <input type="time" id="studyTime" name="studyTime">
+                </div>
+                
+                <div class="form-group">
+                    <input type="submit" value="Submit Survey">
+                </div>
+            </fieldset>
+        </section>
+
+    </form>
+
+    <footer>
+        Student card by (Ваше Ім'я). All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('studentForm').addEventListener('submit', function(event) {
+  
+            event.preventDefault(); 
+            
+            let fullName = document.getElementById('fullName').value;
+            let email = document.getElementById('email').value;
+            
+            if(fullName && email) {
+                alert(`Форма успішно оброблена через JavaScript!\nІм'я: ${fullName}\nEmail: ${email}`);
+   
+            }
+        });
+    </script>
+
+</body>
+</html>
