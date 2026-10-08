@@ -1,8 +1,5 @@
-/* ===== Лабораторна робота №5 — варіант 2: header#logos_container ===== */
-
-/* --- Базові стилі (селектори типу та універсальний) --- */
 html {
-  font-size: 10px;                       /* 1rem = 10px, тому 1.6rem = 16px */
+  font-size: 10px;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -10,41 +7,23 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;                /* Box Model */
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;                             /* Box Model */
-  font-family: 'Roboto', Arial, sans-serif;   /* Fonts */
-  font-size: 1.6rem;                     /* Fonts */
-  font-style: normal;                    /* Fonts */
-  font-weight: normal;                   /* Fonts */
-  line-height: 1.42857143;               /* Fonts */
-  color: #333;                           /* Color */
-  background-color: #fff;                /* Color */
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
 }
 
-/* --- header (селектор id) --- */
 #logos_container {
-  display: block;                        /* Box Model */
-  padding: 1rem 0;                       /* Box Model */
-  box-sizing: border-box;                /* Box Model */
-  font-family: 'Roboto', Arial, sans-serif;   /* Fonts */
-  font-size: 1.6rem;                     /* Fonts */
-  font-style: normal;                    /* Fonts */
-  font-weight: normal;                   /* Fonts */
-  line-height: 1.42857143;               /* Fonts */
-  color: #333;                           /* Color */
-}
-
-/* --- div.container (селектор класу) --- */
-.container {
-  width: 970px;                          /* Box Model */
-  max-width: 100%;                       /* Box Model: щоб не виходило за екран */
-  padding-right: 15px;                   /* Box Model */
-  padding-left: 15px;                    /* Box Model */
-  margin-right: auto;                    /* Box Model */
-  margin-left: auto;                     /* Box Model */
+  display: block;
+  padding: 1rem 0;
   box-sizing: border-box;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 1.6rem;
@@ -54,7 +33,22 @@ body {
   color: #333;
 }
 
-/* --- div.region.region-logos --- */
+.container {
+  width: 970px;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+}
+
 .region-logos {
   box-sizing: border-box;
   font-family: 'Roboto', Arial, sans-serif;
@@ -65,9 +59,8 @@ body {
   color: #333;
 }
 
-/* --- section#block-selectedunits.block --- */
 #block-selectedunits {
-  display: block;                        /* Box Model */
+  display: block;
   box-sizing: border-box;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 1.6rem;
@@ -77,7 +70,6 @@ body {
   color: #333;
 }
 
-/* --- clearfix (псевдоелемент) --- */
 .clearfix::before,
 .clearfix::after,
 .row::before,
@@ -91,7 +83,6 @@ body {
   clear: both;
 }
 
-/* --- div.field --- */
 .field {
   box-sizing: border-box;
   font-family: 'Roboto', Arial, sans-serif;
@@ -102,9 +93,8 @@ body {
   color: #333;
 }
 
-/* --- div.row --- */
 .row {
-  margin-right: -15px;                   /* Box Model */
+  margin-right: -15px;
   box-sizing: border-box;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 1.6rem;
@@ -114,14 +104,13 @@ body {
   color: #333;
 }
 
-/* --- div.col-xs-4 --- */
 .col-xs-4 {
   position: relative;
-  float: left;                           /* Box Model / layout */
-  width: 33.33333333%;                   /* Box Model */
-  min-height: 1px;                       /* Box Model */
-  padding-right: 15px;                   /* Box Model */
-  padding-left: 15px;                    /* Box Model */
+  float: left;
+  width: 33.33333333%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
   box-sizing: border-box;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 1.6rem;
@@ -131,33 +120,31 @@ body {
   color: #333;
 }
 
-/* --- посилання a (селектор типу + дочірній) --- */
 .col-xs-4 > a {
-  color: #0076A8;                        /* Color */
+  color: #0076A8;
   text-decoration: none;
 }
 
 .col-xs-4 > a:hover,
-.col-xs-4 > a:focus {                    /* псевдокласи */
+.col-xs-4 > a:focus {
   text-decoration: underline;
 }
 
-/* --- img.img-responsive (селектор нащадка) --- */
 .col-xs-4 .img-responsive {
-  display: block;                        /* Box Model */
-  width: 175px;                          /* Box Model */
-  max-width: 100%;                       /* Box Model */
-  height: auto;                          /* Box Model */
-  margin-right: auto;                    /* Box Model */
-  margin-left: -15px;                    /* Box Model */
-  border: 0;                                
-   vertical-align: middle;
+  display: block;
+  width: 175px;
+  max-width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: -15px;
+  border: 0;
+  vertical-align: middle;
   box-sizing: border-box;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #0076A8;                        /* Color: колір alt-тексту */
+  color: #0076A8;
   text-align: center;
 }
