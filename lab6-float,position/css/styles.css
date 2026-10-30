@@ -9,9 +9,9 @@ header {
     background: #4CAF50;
     color: white;
     padding: 10px 0;
-    /*position: VALUE;*/
+    position: sticky;
     top: 0;
-    /*z-index: VALUE;*/
+    z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -20,18 +20,19 @@ section {
 }
 
 h2 {
-    /*position: VALUE;*/
-    /*top: VALUE;*/
+    position: sticky;
+    top: 40px;
     background: #f9f9f9;
     padding: 10px 0;
-    margin: 0;
-    /*z-index: VALUE;*/
+    /*position: sticky;*/
+    bottom: 0;
+    z-index: 100;
     border-bottom: 1px solid #ddd;
 }
 
 /* Секція 1 */
 #section-1 img {
-    /*float: VALUE;*/
+    float: left;
     margin-right: 20px;
     width: 250px;
     height: 250px;
@@ -42,7 +43,7 @@ h2 {
 }
 
 .clear {
-    /*clear: VALUE;*/
+    clear: both;
 }
 
 /* Секція 2 */
@@ -69,20 +70,20 @@ h2 {
 
 /* Модальне вікно */
 #modal.hidden {
-    /*display: VALUE*/
+    display: none;
 }
 
 #modal {
-    /*position: VALUE;*/
-    /*top: VALUE;*/
-    /*left: VALUE;*/
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    /*z-index: VALUE;*/
+    z-index: 2000;
 }
 
 .modal-content {
