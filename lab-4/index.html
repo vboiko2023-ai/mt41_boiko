@@ -102,18 +102,5 @@
         <p>Student card by (Владислав Бойко). All rights reserved.</p>
     </footer>
 
-    <script>
-        document.getElementById('studentForm').addEventListener('submit', function(event) {
-            
-
-            let fullName = document.getElementById('fullName').value;
-            let email = document.getElementById('email').value;
-            let country = document.getElementById('country').value;
-            
-            if(fullName && email) {
-                alert(`Форма успішно оброблена!\n\nСтудент: ${fullName}\nEmail: ${email}\nКраїна: ${country || 'Не обрано'}`);
-            }
-        });
-    </script>
 </body>
 </html>
