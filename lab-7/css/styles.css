@@ -33,6 +33,11 @@ body {
 .events-heading a {
     color: white;
     text-decoration: underline;
+    transition: color 0.3s ease-out;
+}
+
+.events-heading a:hover {
+    color: #7fd3ff; 
 }
 
 .events-grid-layout {
@@ -48,6 +53,19 @@ body {
     height: 100%;
     color: #0074b9;
     text-decoration: none;
+}
+.event-box {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-out;
+}
+
+.event-box:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.event-box:hover .event-time-block,
+.event-box:hover h3 {
+    color: #0095d4;
 }
 
 .event-box img {
@@ -81,6 +99,7 @@ body {
     line-height: 20px;
     padding: 13px 15px;
     margin: 0;
+    transition: color 0.3s ease-out;
 }
 
 #section-news {
